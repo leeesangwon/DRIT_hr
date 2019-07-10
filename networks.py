@@ -267,7 +267,7 @@ class G(nn.Module):
     decB6 += [nn.Tanh()]
     self.decB5 = decB5
     self.decB5_1 = nn.Sequential(*decB5_1)
-    self.decB5 = nn.Sequential(*decB6)
+    self.decB6 = nn.Sequential(*decB6)
 
     self.mlpA = nn.Sequential(
         nn.Linear(8, 256),
